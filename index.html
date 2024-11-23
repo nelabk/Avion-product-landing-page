@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiseido</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73d5a06d55.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header id="header">
+        <div id="nav-bar">
+            <div class="left">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="#skincare">Skincare</a>
+                <a class="nav-link" href="#makeup">Makeup</a>
+                <a class="nav-link" href="#video">Discover</a>
+            </div>
+            <div class="center">
+                <img id="header-img" src="images/kindpng_4631510.png">
+            </div>
+            <div class="right">
+                <input type="text" placeholder="Search..">
+                <button class="navbar-login" onclick="document.getElementById('loginModal').style.display='block'" style="width: auto;"><i class="fa-regular fa-user"></i>Log in</a>
+            </div>
+
+            
+            <!-- Burger icon -->
+             <!--
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+           
+        </div>
+
+        <div class="mobile-links">
+            <ul>
+                <li><a class="nav-link active" href="#">Home</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="#skincare">Skincare</a></li>
+                <li><a class="nav-link" href="#makeup">Makeup</a></li>
+                <li><a class="nav-link" href="#video">Discover</a></li>
+                <li><button class="navbar-login" onclick="document.getElementById('loginModal').style.display='block'" style="width: auto;"><i class="fa-regular fa-user"></i>Log in</a></li>
+            </ul>
+        </div> -->
+        
+
+    </header>
+
+    <div id="loginModal" class="modal">
+        <form class="modal-content animate" action="login.html" method="get">
+
+            <div class="container">
+                <label for="email"><b>email address</b></label>
+                <input type="email" placeholder="email@gmail.com" id="email" name="email" required />
+
+                <label for="psw"><b>password</b></label>
+                <input type="password" placeholder="enter password" name="psw" required />
+
+                <button class="login" type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container bottom" style="background-color: #f1f1f1;">
+                <button type="button" onclick="document.getElementById('loginModal').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="#">Forgot password?</a></span>
+            </div>
+        </form>
+    </div>
+
+    <div class="bg-img"></div>
+    
+
+    <main class="container">
+
+        <section class="section-2-home">
+            <div class="mid-container">
+                <h1>Find the right products for you</h1>
+                <div class="card">
+                    <div class="product">
+                        <a href="https://international.shiseido.co.jp/lp-lotions.html" target="_blank">
+                            <img class="product-pic" src="images/softener.webp" alt="Shiseido softeners and lotions" style="width:100%">
+                            <div class="card-container">
+                                <h3>Softeners & Lotions</h3>
+                            </div>
+                        </a>
+                    </div>    
+                    <div class="product">
+                        <a href="https://international.shiseido.co.jp/lp-creams.html" target="_blank">
+                            <img class="product-pic" src="images/cream.jpg" alt="Shiseido moisturizers and creams" style="width:100%">
+                            <div class="card-container">
+                                <h3>Moisturizers & Creams</h3>
+                             </div>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="https://international.shiseido.co.jp/lp-serums.html" target="_blank">
+                            <img class="product-pic" src="images/SHI-SS24_PDP_UTMSerum75mL_Alt_11@2x.jpg" alt="Shiseido serums" style="width:100%">
+                            <div class="card-container">
+                                <h3>Serums</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="video">
+                <h1 class="video-font">ULTIMUNE MOVIE</h1>
+                <div class="video-container">
+                    <iframe width="1120" height="630" src="https://www.youtube.com/embed/lAukrMJWfAI?autoplay=1&mute=1&playlist=lAukrMJWfAI&loop=1&si=WyhGkrRRXZQPyFQp&amp; title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="footer">
+                <div>
+                    <h3>ABOUT SHISEIDO</h5>
+                    <ul>
+                        <li>Who We Are</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookie Policy</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>PRODUCTS & SERVICES</h3>
+                    <ul>
+                        <li>Customer Services</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONTACT</h3>
+                    <ul>
+                        <li>Beauty Consultant</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>SUSTAINABLE BEAUTY ACTIONS</h3>
+                    <ul>
+                        <li>What are SBAS</li>
+                    </ul>
+                    <h3>OTHERS</h3>
+                    <ul>
+                        <li>GINZA EDIT</li>
+                        <li>Tips & Tutorials</li>
+                    </ul>
+                </div>
+                <ul class="sociallinks">
+                    <li><i class="fa-brands fa-square-facebook fa-2xl";></i></li>
+                    <li><i class="fa-brands fa-square-youtube fa-2xl";></i></li>
+                    <li> <i class="fa-brands fa-square-instagram fa-2xl";></i></li>
+                </ul>
+            </div>
+        </div>
+        
+
+    </footer>
+
+    <script>
+
+        var modal = document.getElementById('loginModal');
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            }
+        }
+        
+        // const burgerBtn = document.querySelector('.burger')
+        // const mobileLinks = document.querySelector('.mobile-links')
+
+        // burgerBtn.addEventListener('click', () => {
+            // mobileLinks.classList.toggle('show');    
+        // });
+    </script>
+    
+</body>
+</html>

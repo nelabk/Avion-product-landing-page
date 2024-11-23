@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Shiseido</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73d5a06d55.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header id="header">
+        <div id="nav-bar">
+            <div class="left">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="#about">About</a>
+                <a class="nav-link" href="#skincare">Skincare</a>
+                <a class="nav-link" href="#makeup">Makeup</a>
+            </div>
+            <div class="center">
+                <img id="header-img" src="images/kindpng_4631510.png" style="width: 150px;">
+            </div>
+            <div class="right">
+                <input type="text" placeholder="Search..">
+                <button class="navbar-login" onclick="document.getElementById('loginModal').style.display='block'" style="width: auto;"><i class="fa-regular fa-user"></i>Log in</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="loginModal" class="modal">
+        <form class="modal-content animate" action="login.html" method="get">
+
+            <div class="container">
+                <label for="email"><b>email address</b></label>
+                <input type="email" placeholder="email@gmail.com" id="email" name="email" required />
+
+                <label for="psw"><b>password</b></label>
+                <input type="password" placeholder="enter password" name="psw" required />
+
+                <button class="login" type="submit" id="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container bottom" style="background-color: #f1f1f1;">
+                <button type="button" onclick="document.getElementById('loginModal').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="#">Forgot password?</a></span>
+            </div>
+        </form>
+    </div>
+
+    <script>
+    var modal = document.getElementById('loginModal');
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    <main>
+
+        <section>
+            <div class="top-title">
+                <div class="about-title">
+                    <h1 class="title">SHARING BEAUTY <br>SINCE 1872</h1>
+                </div>
+                <div class="about-title">
+                    <img id="about-img" src="images/output-onlinepngtools.png">
+                </div>
+            </div>
+        </section>
+    
+        <section class="p-container">
+            <h1 class="about-font">BORN IN GINZA. MADE FOR THE WORLD.</h1>
+            <p>SHISEIDO has always been about doing things a little differently. When Arinobu Fukuhara threw open the doors and welcomed the first customers into his Ginza district pharmacy, it signaled the beginning of a company that would change the beauty landscape. It was 1872, and the SHISEIDO founder had just introduced Japan to its first Western-style pharmacy.</p>
+            <p>Aged just 23 and working as Chief Pharmacist in the Japanese navy, Arinobu was disillusioned with the medicine available. He teamed up with some of his colleagues and set out to find an alternative—more Westernized—way of thinking about health. Their inspiration was a noble one: “To take everything and anything good in this world and use it to create new things.”</p>
+            <p>More than 150 years later, SHISEIDO continues to thoughtfully fuse Eastern and Western philosophies and innovations together to serve as a beacon of beauty inspiration—especially the Japanese sense of spiritual beauty—for women all over the globe.</p>
+            <p>We believe that beauty can be found everywhere, in everything and in every person, and we know that meaningful beauty is so much more than just what we can see. Beauty is a shared feeling; it is diverse, and it is unifying. When we feel beautiful and confident, we can’t help but feel inspired to go out into the world and make a positive difference to other people’s lives. By inspiring empathy, beauty is the ultimate force of goodness that makes us feel truly alive.</p>
+        </section>
+    
+        <section class="section-container">
+            <img class="section-img" src="images/about-callout.jpg">
+        </section>
+
+    </main>
+    
+
+    <footer>
+        <div class="container-footer">
+            <div class="footer">
+                <div>
+                    <h3>ABOUT SHISEIDO</h5>
+                    <ul>
+                        <li>Who We Are</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookie Policy</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>PRODUCTS & SERVICES</h3>
+                    <ul>
+                        <li>Customer Services</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONTACT</h3>
+                    <ul>
+                        <li>Beauty Consultant</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>SUSTAINABLE BEAUTY ACTIONS</h3>
+                    <ul>
+                        <li>What are SBAS</li>
+                    </ul>
+                    <h3>OTHERS</h3>
+                    <ul>
+                        <li>GINZA EDIT</li>
+                        <li>Tips & Tutorials</li>
+                    </ul>
+                </div>
+                <ul class="sociallinks">
+                    <li><i class="fa-brands fa-square-facebook fa-2xl";></i></li>
+                    <li><i class="fa-brands fa-square-youtube fa-2xl";></i></li>
+                    <li> <i class="fa-brands fa-square-instagram fa-2xl";></i></li>
+                </ul>
+            </div>
+        </div>
+        
+
+    </footer>
+</body>
+</html>
